@@ -9,7 +9,7 @@ export default function Login() {
 
     const Login = async (e) => {
         e.preventDefault();
-        const res = await axios.post('http://localhost:4000/login',{
+        const res = await axios.post('/login',{
             username: username,
             password: password
         });

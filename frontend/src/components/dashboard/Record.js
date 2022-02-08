@@ -15,7 +15,7 @@ export default function Record({ username }) {
   }, []);
 
   async function getItem() {
-    const res = await axios.post("http://localhost:4000/getitem", {
+    const res = await axios.post("/getitem", {
       username: username,
     });
     setData(res.data);
@@ -23,7 +23,7 @@ export default function Record({ username }) {
 
   const additem = async (e) => {
     e.preventDefault();
-    const res = await axios.post("http://localhost:4000/additem", {
+    const res = await axios.post("/additem", {
       username: username,
       name: name,
       desc: desc,
@@ -34,14 +34,14 @@ export default function Record({ username }) {
   };
 
   async function deleteitem(itemid) {
-    const res = await axios.post("http://localhost:4000/deleteitem", {
+    const res = await axios.post("/deleteitem", {
       id: itemid,
     });
     await getItem();
   }
 
   const searchitem = async () => {
-    const res = await axios.post("http://localhost:4000/search", {
+    const res = await axios.post("/search", {
       username: username,
       name: s,
     });

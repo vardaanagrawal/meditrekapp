@@ -50,7 +50,7 @@ function matchtime(token) {
 }
 
 async function matchpassword(token){
-    const res = await axios.post('http://localhost:4000/matchpassword',{
+    const res = await axios.post('/matchpassword',{
         username: token.username,
         password: token.password
     });

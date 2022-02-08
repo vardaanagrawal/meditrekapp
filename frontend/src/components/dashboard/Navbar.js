@@ -21,7 +21,7 @@ export default function Navbar({username}) {
     const changePassword =async (e) => {
         e.preventDefault();
         if(newpassword === confirmnewpass){
-        const res = await axios.put('http://localhost:4000/changepassword',{
+        const res = await axios.put('/changepassword',{
             username: username,
             curpassword: curpassword,
             newpassword: newpassword
