@@ -1,0 +1,142 @@
+.record{
+    height: 90vh;
+    width: 100%;
+    display: flex;
+}
+
+.addrecord{
+    flex: 2;
+    height: 100%;
+    text-align: center;
+    border: silver 0.5px solid;
+}
+
+.addrecord form{
+    height: auto;
+    background-color: white;
+    margin: 0px 20px;
+    padding: 30px 0px;
+    box-shadow: silver 1px 1px 20px 1px;
+    border-radius: 10px;
+}
+
+.addrecord form input{
+    border: solid black 1px;
+    border-radius: 10px;
+}
+
+#addbtn{
+    background-color: gold;
+    width: 70px;
+    font-weight: 900;
+}
+#addbtn:hover{
+    transform: scale(1.1);
+}
+
+.showrecord{
+    flex: 5;
+    height: 100%;
+    text-align: center;
+    overflow-y: scroll;
+}
+
+.recordbox{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,250px);
+    grid-column-gap: 30px;
+    grid-row-gap: 50px;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.card{
+    height: 200px;
+    width: 250px;
+    border: solid black 1px;
+    text-align: start;
+    overflow-y: scroll;
+    border-radius: 10px;
+    box-shadow: silver 1px 1px 20px 1px;
+}
+
+.cardhead{
+    background-color: gold;
+    padding: 5px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+}
+.cardbody{
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    padding:0px 10px;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+.searchform{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.searchfield{
+    margin: 20px;
+    border: solid black 1px;
+    border-radius: 10px;
+}
+#srchbtn, #showallbtn{
+    height: 30px;
+    font-weight: bold;
+    margin: 0px 20px;
+    background-color: gold;
+    border-radius: 10px;
+    border: solid black 2px;
+}
+
+@media only screen and (max-width: 1200px){
+    .record{
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+    .addrecord{
+        width: 300px;
+        border: none;
+    }
+    .addrecord form{
+        padding: 5px 20px;
+    }
+    .showrecord{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .searchform{
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+    #srchbtn, #showallbtn{
+        margin: 10px;
+    }
+
+}
+
+@media only screen and (max-width: 300px){
+    .addrecord {
+        width: 100%;
+    }
+    .addrecord form{
+        width: 90%;
+        margin-left: -5%;
+    }
+    
+}

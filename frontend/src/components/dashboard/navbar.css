@@ -1,0 +1,59 @@
+.navbar{
+    height: 70px;
+    width: 100%;
+    background-color: gold;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo{
+    font-size: 54px;
+    font-weight: bolder;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: rgb(139, 78, 78) 2px 2px;
+}
+
+.menu{
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.accountbox{
+    height: auto;
+    width: auto;
+    padding: 20px 30px;
+    position: absolute;
+    top: 70px;
+    right: 12%;
+    box-shadow: silver 1px 1px 20px 1px;
+    background-color: white;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.cpbox form{
+    background-color: white;
+}
+.cpbox form input{
+    border: solid black 1px;
+    border-radius: 10px;
+}
+#cpbtn{
+    background-color: gold;
+}
+
+@media only screen and (max-width: 350px){
+    .logo{
+        font-size: 32px;
+    }
+    .menu{
+        width: 50px;
+    }
+    .accountbox{
+        width: 70%;
+        right: 5%;
+        left: 5%;
+    }
+}
