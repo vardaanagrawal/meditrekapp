@@ -7,6 +7,7 @@ export default function Home() {
     <div className="homePage">
       <div className="box">
           <div className="title">DIGIREX</div>
+          An app that helps you to maintain your personalised medical record.
           <div className="btns">
               <Link to='/login'>Log In</Link>
               <Link to='/signup'>Sign Up</Link>
